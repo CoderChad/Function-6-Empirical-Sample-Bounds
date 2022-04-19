@@ -47,28 +47,30 @@ def empiricalSampleBounds(data,p):
     ub=ascend[-(N_tail+1)]
     
     return lb,ub
-# dataset one
+    
+    
+# Dataset 1
 file='sampleInput1.csv'
 
-# this is the first input, the data
+# First input of the data 
 data=np.genfromtxt(file,delimiter=" ")
 
-# this is the second input, the probability mass bounds
-# will look at a list of them to compare result
+# Second input is the probability mass bounds
+# We will look at a list of them to compare result
 ps=[95,99,50]
 
 for p in ps:
     lb,ub=empiricalSampleBounds(data,p)
     print(p,lb,ub)
 
-# dataset two
+# Dataset 2
 file='sampleInput2.csv'
 
-# this is the first input, the data
+# First input of the data
 data=np.genfromtxt(file,delimiter=" ")
 
-# this is the second input, the probability mass bounds
-# will look at a list of them to compare result
+# Second input is the probability mass bounds
+# We will look at a list of them to compare result
 ps=[95,99,50]
 
 for p in ps:
