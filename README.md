@@ -47,7 +47,6 @@ def empiricalSampleBounds(data,p):
     ub=ascend[-(N_tail+1)]
     
     return lb,ub
-
 # dataset one
 file='sampleInput1.csv'
 
