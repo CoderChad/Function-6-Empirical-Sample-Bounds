@@ -55,8 +55,7 @@ file='sampleInput1.csv'
 # First input of the data 
 data=np.genfromtxt(file,delimiter=" ")
 
-# Second input is the probability mass bounds
-# We will look at a list of them to compare result
+# Second input is the probability mass bounds. We will look at a list of them to compare result
 ps=[95,99,50]
 
 for p in ps:
@@ -69,8 +68,7 @@ file='sampleInput2.csv'
 # First input of the data
 data=np.genfromtxt(file,delimiter=" ")
 
-# Second input is the probability mass bounds
-# We will look at a list of them to compare result
+# Second input is the probability mass bounds. We will look at a list of them to compare result
 ps=[95,99,50]
 
 for p in ps:
